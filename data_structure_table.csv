@@ -1,0 +1,565 @@
+section,table_name,column_order,field_name,inferred_type,key_role,reference_target,description
+female,female_coaches.csv,1,coach_id,integer,PK,,Coach business identifier.
+female,female_coaches.csv,2,coach_url,url_or_path,普通属性,,Relative URL for the coach profile page.
+female,female_coaches.csv,3,short_name,text,普通属性,,Short display name.
+female,female_coaches.csv,4,long_name,text,普通属性,,Full display name.
+female,female_coaches.csv,5,dob,date,普通属性,,Date of birth.
+female,female_coaches.csv,6,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+female,female_coaches.csv,7,nationality_name,text,普通属性,,Country name text.
+female,female_coaches.csv,8,face_url,url_or_path,普通属性,,Portrait image URL.
+female,female_players (legacy).csv,1,player_id,integer,PK,,Player business identifier.
+female,female_players (legacy).csv,2,player_url,url_or_path,普通属性,,Relative URL for the player profile page.
+female,female_players (legacy).csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+female,female_players (legacy).csv,4,fifa_update,integer,PK,,In-version update sequence number.
+female,female_players (legacy).csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+female,female_players (legacy).csv,6,short_name,text,普通属性,,Short display name.
+female,female_players (legacy).csv,7,long_name,text,普通属性,,Full display name.
+female,female_players (legacy).csv,8,player_positions,text,普通属性,,Primary and secondary player positions.
+female,female_players (legacy).csv,9,overall,integer,普通属性,,Overall rating.
+female,female_players (legacy).csv,10,potential,integer,普通属性,,Potential rating.
+female,female_players (legacy).csv,11,value_eur,integer,普通属性,,Estimated market value in EUR.
+female,female_players (legacy).csv,12,wage_eur,integer,普通属性,,Estimated wage in EUR.
+female,female_players (legacy).csv,13,age,integer,普通属性,,Age in years at the snapshot date.
+female,female_players (legacy).csv,14,dob,date,普通属性,,Date of birth.
+female,female_players (legacy).csv,15,height_cm,integer,普通属性,,Height in centimeters.
+female,female_players (legacy).csv,16,weight_kg,integer,普通属性,,Weight in kilograms.
+female,female_players (legacy).csv,17,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+female,female_players (legacy).csv,18,league_name,coded_text,普通属性,,League name text.
+female,female_players (legacy).csv,19,league_level,integer,普通属性,,League tier level.
+female,female_players (legacy).csv,20,club_team_id,integer,实体引用,female_teams.csv.team_id,Referenced club team business ID.
+female,female_players (legacy).csv,21,club_name,coded_text,普通属性,,Club name text.
+female,female_players (legacy).csv,22,club_position,text,普通属性,,Player role inside the club lineup.
+female,female_players (legacy).csv,23,club_jersey_number,integer,普通属性,,Club jersey number.
+female,female_players (legacy).csv,24,club_loaned_from,coded_text,普通属性,,Source club when the player is on loan.
+female,female_players (legacy).csv,25,club_joined_date,date,普通属性,,Date when the player joined the club.
+female,female_players (legacy).csv,26,club_contract_valid_until_year,integer,普通属性,,Club contract end year.
+female,female_players (legacy).csv,27,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+female,female_players (legacy).csv,28,nationality_name,coded_text,普通属性,,Country name text.
+female,female_players (legacy).csv,29,nation_team_id,integer,实体引用,female_teams.csv.team_id,Referenced national team business ID.
+female,female_players (legacy).csv,30,nation_position,text,普通属性,,Player role inside the national team lineup.
+female,female_players (legacy).csv,31,nation_jersey_number,integer,普通属性,,National team jersey number.
+female,female_players (legacy).csv,32,preferred_foot,coded_text,普通属性,,Preferred foot.
+female,female_players (legacy).csv,33,weak_foot,integer,普通属性,,Weak-foot rating.
+female,female_players (legacy).csv,34,skill_moves,integer,普通属性,,Skill-move rating.
+female,female_players (legacy).csv,35,international_reputation,integer,普通属性,,International reputation rating.
+female,female_players (legacy).csv,36,work_rate,coded_text,普通属性,,Attacking and defensive work rate.
+female,female_players (legacy).csv,37,body_type,coded_text,普通属性,,Body type descriptor.
+female,female_players (legacy).csv,38,real_face,boolean_text,普通属性,,Whether the player has a real face scan.
+female,female_players (legacy).csv,39,release_clause_eur,integer,普通属性,,Release clause amount in EUR.
+female,female_players (legacy).csv,40,player_tags,text,普通属性,,Tagged special roles or archetypes.
+female,female_players (legacy).csv,41,player_traits,text,普通属性,,Detailed player traits.
+female,female_players (legacy).csv,42,pace,integer,普通属性,,Aggregate pace rating.
+female,female_players (legacy).csv,43,shooting,integer,普通属性,,Aggregate shooting rating.
+female,female_players (legacy).csv,44,passing,integer,普通属性,,Aggregate passing rating.
+female,female_players (legacy).csv,45,dribbling,integer,普通属性,,Aggregate dribbling rating.
+female,female_players (legacy).csv,46,defending,integer,普通属性,,Aggregate defending rating.
+female,female_players (legacy).csv,47,physic,integer,普通属性,,Aggregate physical rating.
+female,female_players (legacy).csv,48,attacking_crossing,integer,普通属性,,Detailed attacking metric: crossing.
+female,female_players (legacy).csv,49,attacking_finishing,integer,普通属性,,Detailed attacking metric: finishing.
+female,female_players (legacy).csv,50,attacking_heading_accuracy,integer,普通属性,,Detailed attacking metric: heading accuracy.
+female,female_players (legacy).csv,51,attacking_short_passing,integer,普通属性,,Detailed attacking metric: short passing.
+female,female_players (legacy).csv,52,attacking_volleys,integer,普通属性,,Detailed attacking metric: volleys.
+female,female_players (legacy).csv,53,skill_dribbling,integer,普通属性,,Detailed skill metric: dribbling.
+female,female_players (legacy).csv,54,skill_curve,integer,普通属性,,Detailed skill metric: curve.
+female,female_players (legacy).csv,55,skill_fk_accuracy,integer,普通属性,,Detailed skill metric: fk accuracy.
+female,female_players (legacy).csv,56,skill_long_passing,integer,普通属性,,Detailed skill metric: long passing.
+female,female_players (legacy).csv,57,skill_ball_control,integer,普通属性,,Detailed skill metric: ball control.
+female,female_players (legacy).csv,58,movement_acceleration,integer,普通属性,,Detailed movement metric: acceleration.
+female,female_players (legacy).csv,59,movement_sprint_speed,integer,普通属性,,Detailed movement metric: sprint speed.
+female,female_players (legacy).csv,60,movement_agility,integer,普通属性,,Detailed movement metric: agility.
+female,female_players (legacy).csv,61,movement_reactions,integer,普通属性,,Detailed movement metric: reactions.
+female,female_players (legacy).csv,62,movement_balance,integer,普通属性,,Detailed movement metric: balance.
+female,female_players (legacy).csv,63,power_shot_power,integer,普通属性,,Detailed power metric: shot power.
+female,female_players (legacy).csv,64,power_jumping,integer,普通属性,,Detailed power metric: jumping.
+female,female_players (legacy).csv,65,power_stamina,integer,普通属性,,Detailed power metric: stamina.
+female,female_players (legacy).csv,66,power_strength,integer,普通属性,,Detailed power metric: strength.
+female,female_players (legacy).csv,67,power_long_shots,integer,普通属性,,Detailed power metric: long shots.
+female,female_players (legacy).csv,68,mentality_aggression,integer,普通属性,,Detailed mentality metric: aggression.
+female,female_players (legacy).csv,69,mentality_interceptions,integer,普通属性,,Detailed mentality metric: interceptions.
+female,female_players (legacy).csv,70,mentality_positioning,integer,普通属性,,Detailed mentality metric: positioning.
+female,female_players (legacy).csv,71,mentality_vision,integer,普通属性,,Detailed mentality metric: vision.
+female,female_players (legacy).csv,72,mentality_penalties,integer,普通属性,,Detailed mentality metric: penalties.
+female,female_players (legacy).csv,73,mentality_composure,integer,普通属性,,Detailed mentality metric: composure.
+female,female_players (legacy).csv,74,defending_marking_awareness,integer,普通属性,,Detailed defending metric: marking awareness.
+female,female_players (legacy).csv,75,defending_standing_tackle,integer,普通属性,,Detailed defending metric: standing tackle.
+female,female_players (legacy).csv,76,defending_sliding_tackle,integer,普通属性,,Detailed defending metric: sliding tackle.
+female,female_players (legacy).csv,77,goalkeeping_diving,integer,普通属性,,Detailed goalkeeping metric: diving.
+female,female_players (legacy).csv,78,goalkeeping_handling,integer,普通属性,,Detailed goalkeeping metric: handling.
+female,female_players (legacy).csv,79,goalkeeping_kicking,integer,普通属性,,Detailed goalkeeping metric: kicking.
+female,female_players (legacy).csv,80,goalkeeping_positioning,integer,普通属性,,Detailed goalkeeping metric: positioning.
+female,female_players (legacy).csv,81,goalkeeping_reflexes,integer,普通属性,,Detailed goalkeeping metric: reflexes.
+female,female_players (legacy).csv,82,goalkeeping_speed,integer,普通属性,,Detailed goalkeeping metric: speed.
+female,female_players (legacy).csv,83,ls,text,普通属性,,Projected rating for the LS position.
+female,female_players (legacy).csv,84,st,text,普通属性,,Projected rating for the ST position.
+female,female_players (legacy).csv,85,rs,text,普通属性,,Projected rating for the RS position.
+female,female_players (legacy).csv,86,lw,integer,普通属性,,Projected rating for the LW position.
+female,female_players (legacy).csv,87,lf,text,普通属性,,Projected rating for the LF position.
+female,female_players (legacy).csv,88,cf,text,普通属性,,Projected rating for the CF position.
+female,female_players (legacy).csv,89,rf,text,普通属性,,Projected rating for the RF position.
+female,female_players (legacy).csv,90,rw,integer,普通属性,,Projected rating for the RW position.
+female,female_players (legacy).csv,91,lam,text,普通属性,,Projected rating for the LAM position.
+female,female_players (legacy).csv,92,cam,text,普通属性,,Projected rating for the CAM position.
+female,female_players (legacy).csv,93,ram,text,普通属性,,Projected rating for the RAM position.
+female,female_players (legacy).csv,94,lm,text,普通属性,,Projected rating for the LM position.
+female,female_players (legacy).csv,95,lcm,text,普通属性,,Projected rating for the LCM position.
+female,female_players (legacy).csv,96,cm,text,普通属性,,Projected rating for the CM position.
+female,female_players (legacy).csv,97,rcm,text,普通属性,,Projected rating for the RCM position.
+female,female_players (legacy).csv,98,rm,text,普通属性,,Projected rating for the RM position.
+female,female_players (legacy).csv,99,lwb,position_rating_projection,普通属性,,Projected rating for the LWB position.
+female,female_players (legacy).csv,100,ldm,position_rating_projection,普通属性,,Projected rating for the LDM position.
+female,female_players (legacy).csv,101,cdm,position_rating_projection,普通属性,,Projected rating for the CDM position.
+female,female_players (legacy).csv,102,rdm,position_rating_projection,普通属性,,Projected rating for the RDM position.
+female,female_players (legacy).csv,103,rwb,position_rating_projection,普通属性,,Projected rating for the RWB position.
+female,female_players (legacy).csv,104,lb,position_rating_projection,普通属性,,Projected rating for the LB position.
+female,female_players (legacy).csv,105,lcb,text,普通属性,,Projected rating for the LCB position.
+female,female_players (legacy).csv,106,cb,text,普通属性,,Projected rating for the CB position.
+female,female_players (legacy).csv,107,rcb,text,普通属性,,Projected rating for the RCB position.
+female,female_players (legacy).csv,108,rb,position_rating_projection,普通属性,,Projected rating for the RB position.
+female,female_players (legacy).csv,109,gk,position_rating_projection,普通属性,,Projected rating for the GK position.
+female,female_players (legacy).csv,110,player_face_url,url_or_path,普通属性,,URL or relative path attribute.
+female,female_players.csv,1,player_id,integer,PK,,Player business identifier.
+female,female_players.csv,2,player_url,url_or_path,普通属性,,Relative URL for the player profile page.
+female,female_players.csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+female,female_players.csv,4,fifa_update,integer,PK,,In-version update sequence number.
+female,female_players.csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+female,female_players.csv,6,short_name,text,普通属性,,Short display name.
+female,female_players.csv,7,long_name,text,普通属性,,Full display name.
+female,female_players.csv,8,player_positions,text,普通属性,,Primary and secondary player positions.
+female,female_players.csv,9,overall,integer,普通属性,,Overall rating.
+female,female_players.csv,10,potential,integer,普通属性,,Potential rating.
+female,female_players.csv,11,value_eur,integer,普通属性,,Estimated market value in EUR.
+female,female_players.csv,12,wage_eur,integer,普通属性,,Estimated wage in EUR.
+female,female_players.csv,13,age,integer,普通属性,,Age in years at the snapshot date.
+female,female_players.csv,14,dob,date,普通属性,,Date of birth.
+female,female_players.csv,15,height_cm,integer,普通属性,,Height in centimeters.
+female,female_players.csv,16,weight_kg,integer,普通属性,,Weight in kilograms.
+female,female_players.csv,17,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+female,female_players.csv,18,league_name,coded_text,普通属性,,League name text.
+female,female_players.csv,19,league_level,integer,普通属性,,League tier level.
+female,female_players.csv,20,club_team_id,integer,实体引用,female_teams.csv.team_id,Referenced club team business ID.
+female,female_players.csv,21,club_name,coded_text,普通属性,,Club name text.
+female,female_players.csv,22,club_position,text,普通属性,,Player role inside the club lineup.
+female,female_players.csv,23,club_jersey_number,integer,普通属性,,Club jersey number.
+female,female_players.csv,24,club_loaned_from,coded_text,普通属性,,Source club when the player is on loan.
+female,female_players.csv,25,club_joined_date,date,普通属性,,Date when the player joined the club.
+female,female_players.csv,26,club_contract_valid_until_year,integer,普通属性,,Club contract end year.
+female,female_players.csv,27,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+female,female_players.csv,28,nationality_name,coded_text,普通属性,,Country name text.
+female,female_players.csv,29,nation_team_id,integer,实体引用,female_teams.csv.team_id,Referenced national team business ID.
+female,female_players.csv,30,nation_position,coded_text,普通属性,,Player role inside the national team lineup.
+female,female_players.csv,31,nation_jersey_number,integer,普通属性,,National team jersey number.
+female,female_players.csv,32,preferred_foot,coded_text,普通属性,,Preferred foot.
+female,female_players.csv,33,weak_foot,integer,普通属性,,Weak-foot rating.
+female,female_players.csv,34,skill_moves,integer,普通属性,,Skill-move rating.
+female,female_players.csv,35,international_reputation,integer,普通属性,,International reputation rating.
+female,female_players.csv,36,work_rate,coded_text,普通属性,,Attacking and defensive work rate.
+female,female_players.csv,37,body_type,coded_text,普通属性,,Body type descriptor.
+female,female_players.csv,38,real_face,boolean_text,普通属性,,Whether the player has a real face scan.
+female,female_players.csv,39,release_clause_eur,integer,普通属性,,Release clause amount in EUR.
+female,female_players.csv,40,player_tags,text,普通属性,,Tagged special roles or archetypes.
+female,female_players.csv,41,player_traits,text,普通属性,,Detailed player traits.
+female,female_players.csv,42,pace,integer,普通属性,,Aggregate pace rating.
+female,female_players.csv,43,shooting,integer,普通属性,,Aggregate shooting rating.
+female,female_players.csv,44,passing,integer,普通属性,,Aggregate passing rating.
+female,female_players.csv,45,dribbling,integer,普通属性,,Aggregate dribbling rating.
+female,female_players.csv,46,defending,integer,普通属性,,Aggregate defending rating.
+female,female_players.csv,47,physic,integer,普通属性,,Aggregate physical rating.
+female,female_players.csv,48,attacking_crossing,integer,普通属性,,Detailed attacking metric: crossing.
+female,female_players.csv,49,attacking_finishing,integer,普通属性,,Detailed attacking metric: finishing.
+female,female_players.csv,50,attacking_heading_accuracy,integer,普通属性,,Detailed attacking metric: heading accuracy.
+female,female_players.csv,51,attacking_short_passing,integer,普通属性,,Detailed attacking metric: short passing.
+female,female_players.csv,52,attacking_volleys,integer,普通属性,,Detailed attacking metric: volleys.
+female,female_players.csv,53,skill_dribbling,integer,普通属性,,Detailed skill metric: dribbling.
+female,female_players.csv,54,skill_curve,integer,普通属性,,Detailed skill metric: curve.
+female,female_players.csv,55,skill_fk_accuracy,integer,普通属性,,Detailed skill metric: fk accuracy.
+female,female_players.csv,56,skill_long_passing,integer,普通属性,,Detailed skill metric: long passing.
+female,female_players.csv,57,skill_ball_control,integer,普通属性,,Detailed skill metric: ball control.
+female,female_players.csv,58,movement_acceleration,integer,普通属性,,Detailed movement metric: acceleration.
+female,female_players.csv,59,movement_sprint_speed,integer,普通属性,,Detailed movement metric: sprint speed.
+female,female_players.csv,60,movement_agility,integer,普通属性,,Detailed movement metric: agility.
+female,female_players.csv,61,movement_reactions,integer,普通属性,,Detailed movement metric: reactions.
+female,female_players.csv,62,movement_balance,integer,普通属性,,Detailed movement metric: balance.
+female,female_players.csv,63,power_shot_power,integer,普通属性,,Detailed power metric: shot power.
+female,female_players.csv,64,power_jumping,integer,普通属性,,Detailed power metric: jumping.
+female,female_players.csv,65,power_stamina,integer,普通属性,,Detailed power metric: stamina.
+female,female_players.csv,66,power_strength,integer,普通属性,,Detailed power metric: strength.
+female,female_players.csv,67,power_long_shots,integer,普通属性,,Detailed power metric: long shots.
+female,female_players.csv,68,mentality_aggression,integer,普通属性,,Detailed mentality metric: aggression.
+female,female_players.csv,69,mentality_interceptions,integer,普通属性,,Detailed mentality metric: interceptions.
+female,female_players.csv,70,mentality_positioning,integer,普通属性,,Detailed mentality metric: positioning.
+female,female_players.csv,71,mentality_vision,integer,普通属性,,Detailed mentality metric: vision.
+female,female_players.csv,72,mentality_penalties,integer,普通属性,,Detailed mentality metric: penalties.
+female,female_players.csv,73,mentality_composure,integer,普通属性,,Detailed mentality metric: composure.
+female,female_players.csv,74,defending_marking_awareness,integer,普通属性,,Detailed defending metric: marking awareness.
+female,female_players.csv,75,defending_standing_tackle,integer,普通属性,,Detailed defending metric: standing tackle.
+female,female_players.csv,76,defending_sliding_tackle,integer,普通属性,,Detailed defending metric: sliding tackle.
+female,female_players.csv,77,goalkeeping_diving,integer,普通属性,,Detailed goalkeeping metric: diving.
+female,female_players.csv,78,goalkeeping_handling,integer,普通属性,,Detailed goalkeeping metric: handling.
+female,female_players.csv,79,goalkeeping_kicking,integer,普通属性,,Detailed goalkeeping metric: kicking.
+female,female_players.csv,80,goalkeeping_positioning,integer,普通属性,,Detailed goalkeeping metric: positioning.
+female,female_players.csv,81,goalkeeping_reflexes,integer,普通属性,,Detailed goalkeeping metric: reflexes.
+female,female_players.csv,82,goalkeeping_speed,integer,普通属性,,Detailed goalkeeping metric: speed.
+female,female_players.csv,83,ls,text,普通属性,,Projected rating for the LS position.
+female,female_players.csv,84,st,text,普通属性,,Projected rating for the ST position.
+female,female_players.csv,85,rs,text,普通属性,,Projected rating for the RS position.
+female,female_players.csv,86,lw,integer,普通属性,,Projected rating for the LW position.
+female,female_players.csv,87,lf,integer,普通属性,,Projected rating for the LF position.
+female,female_players.csv,88,cf,integer,普通属性,,Projected rating for the CF position.
+female,female_players.csv,89,rf,integer,普通属性,,Projected rating for the RF position.
+female,female_players.csv,90,rw,integer,普通属性,,Projected rating for the RW position.
+female,female_players.csv,91,lam,text,普通属性,,Projected rating for the LAM position.
+female,female_players.csv,92,cam,text,普通属性,,Projected rating for the CAM position.
+female,female_players.csv,93,ram,text,普通属性,,Projected rating for the RAM position.
+female,female_players.csv,94,lm,position_rating_projection,普通属性,,Projected rating for the LM position.
+female,female_players.csv,95,lcm,text,普通属性,,Projected rating for the LCM position.
+female,female_players.csv,96,cm,text,普通属性,,Projected rating for the CM position.
+female,female_players.csv,97,rcm,text,普通属性,,Projected rating for the RCM position.
+female,female_players.csv,98,rm,position_rating_projection,普通属性,,Projected rating for the RM position.
+female,female_players.csv,99,lwb,position_rating_projection,普通属性,,Projected rating for the LWB position.
+female,female_players.csv,100,ldm,position_rating_projection,普通属性,,Projected rating for the LDM position.
+female,female_players.csv,101,cdm,position_rating_projection,普通属性,,Projected rating for the CDM position.
+female,female_players.csv,102,rdm,position_rating_projection,普通属性,,Projected rating for the RDM position.
+female,female_players.csv,103,rwb,position_rating_projection,普通属性,,Projected rating for the RWB position.
+female,female_players.csv,104,lb,position_rating_projection,普通属性,,Projected rating for the LB position.
+female,female_players.csv,105,lcb,text,普通属性,,Projected rating for the LCB position.
+female,female_players.csv,106,cb,text,普通属性,,Projected rating for the CB position.
+female,female_players.csv,107,rcb,text,普通属性,,Projected rating for the RCB position.
+female,female_players.csv,108,rb,position_rating_projection,普通属性,,Projected rating for the RB position.
+female,female_players.csv,109,gk,position_rating_projection,普通属性,,Projected rating for the GK position.
+female,female_players.csv,110,player_face_url,url_or_path,普通属性,,URL or relative path attribute.
+female,female_teams.csv,1,team_id,integer,PK,,Team business identifier.
+female,female_teams.csv,2,team_url,url_or_path,普通属性,,Relative URL for the team profile page.
+female,female_teams.csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+female,female_teams.csv,4,fifa_update,integer,PK,,In-version update sequence number.
+female,female_teams.csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+female,female_teams.csv,6,team_name,text,普通属性,,Displayed team name.
+female,female_teams.csv,7,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+female,female_teams.csv,8,league_name,coded_text,普通属性,,League name text.
+female,female_teams.csv,9,league_level,integer,普通属性,,League tier level.
+female,female_teams.csv,10,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+female,female_teams.csv,11,nationality_name,coded_text,普通属性,,Country name text.
+female,female_teams.csv,12,overall,integer,普通属性,,Overall rating.
+female,female_teams.csv,13,attack,integer,普通属性,,General attribute: attack.
+female,female_teams.csv,14,midfield,integer,普通属性,,General attribute: midfield.
+female,female_teams.csv,15,defence,integer,普通属性,,General attribute: defence.
+female,female_teams.csv,16,coach_id,integer,严格FK,female_coaches.csv.coach_id,Coach business identifier.
+female,female_teams.csv,17,home_stadium,text,普通属性,,Home stadium name.
+female,female_teams.csv,18,rival_team,integer,弱自引用,female_teams.csv.team_id,Referenced rival team business ID.
+female,female_teams.csv,19,international_prestige,integer,普通属性,,International prestige score.
+female,female_teams.csv,20,domestic_prestige,integer,普通属性,,Domestic prestige score.
+female,female_teams.csv,21,transfer_budget_eur,integer,普通属性,,Transfer budget in EUR.
+female,female_teams.csv,22,club_worth_eur,integer,普通属性,,Estimated club worth in EUR.
+female,female_teams.csv,23,starting_xi_average_age,decimal,普通属性,,Average age of the starting eleven.
+female,female_teams.csv,24,whole_team_average_age,decimal,普通属性,,Average age of the full squad.
+female,female_teams.csv,25,captain,integer,实体引用,female_players.csv.player_id,Captain player business ID.
+female,female_teams.csv,26,short_free_kick,integer,实体引用,female_players.csv.player_id,Assigned short free-kick taker ID.
+female,female_teams.csv,27,long_free_kick,integer,实体引用,female_players.csv.player_id,Assigned long free-kick taker ID.
+female,female_teams.csv,28,left_short_free_kick,integer,实体引用,female_players.csv.player_id,Assigned left short free-kick taker ID.
+female,female_teams.csv,29,right_short_free_kick,integer,实体引用,female_players.csv.player_id,Assigned right short free-kick taker ID.
+female,female_teams.csv,30,penalties,integer,实体引用,female_players.csv.player_id,Assigned penalty taker ID.
+female,female_teams.csv,31,left_corner,integer,实体引用,female_players.csv.player_id,Assigned left corner taker ID.
+female,female_teams.csv,32,right_corner,integer,实体引用,female_players.csv.player_id,Assigned right corner taker ID.
+female,female_teams.csv,33,def_style,text,普通属性,,Team defensive tactic attribute: style.
+female,female_teams.csv,34,def_team_width,integer,普通属性,,Team defensive tactic attribute: team width.
+female,female_teams.csv,35,def_team_depth,integer,普通属性,,Team defensive tactic attribute: team depth.
+female,female_teams.csv,36,def_defence_pressure,integer,普通属性,,Team defensive tactic attribute: defence pressure.
+female,female_teams.csv,37,def_defence_aggression,integer,普通属性,,Team defensive tactic attribute: defence aggression.
+female,female_teams.csv,38,def_defence_width,integer,普通属性,,Team defensive tactic attribute: defence width.
+female,female_teams.csv,39,def_defence_defender_line,coded_text,普通属性,,Team defensive tactic attribute: defence defender line.
+female,female_teams.csv,40,off_style,coded_text,普通属性,,Team offensive tactic attribute: style.
+female,female_teams.csv,41,off_build_up_play,coded_text,普通属性,,Team offensive tactic attribute: build up play.
+female,female_teams.csv,42,off_chance_creation,coded_text,普通属性,,Team offensive tactic attribute: chance creation.
+female,female_teams.csv,43,off_team_width,integer,普通属性,,Team offensive tactic attribute: team width.
+female,female_teams.csv,44,off_players_in_box,integer,普通属性,,Team offensive tactic attribute: players in box.
+female,female_teams.csv,45,off_corners,integer,普通属性,,Team offensive tactic attribute: corners.
+female,female_teams.csv,46,off_free_kicks,integer,普通属性,,Team offensive tactic attribute: free kicks.
+female,female_teams.csv,47,build_up_play_speed,integer,普通属性,,Build-up play setting: speed.
+female,female_teams.csv,48,build_up_play_dribbling,integer,普通属性,,Build-up play setting: dribbling.
+female,female_teams.csv,49,build_up_play_passing,integer,普通属性,,Build-up play setting: passing.
+female,female_teams.csv,50,build_up_play_positioning,coded_text,普通属性,,Build-up play setting: positioning.
+female,female_teams.csv,51,chance_creation_passing,integer,普通属性,,Chance-creation setting: passing.
+female,female_teams.csv,52,chance_creation_crossing,integer,普通属性,,Chance-creation setting: crossing.
+female,female_teams.csv,53,chance_creation_shooting,integer,普通属性,,Chance-creation setting: shooting.
+female,female_teams.csv,54,chance_creation_positioning,coded_text,普通属性,,Chance-creation setting: positioning.
+male,male_coaches.csv,1,coach_id,integer,PK,,Coach business identifier.
+male,male_coaches.csv,2,coach_url,url_or_path,普通属性,,Relative URL for the coach profile page.
+male,male_coaches.csv,3,short_name,text,普通属性,,Short display name.
+male,male_coaches.csv,4,long_name,text,普通属性,,Full display name.
+male,male_coaches.csv,5,dob,date,普通属性,,Date of birth.
+male,male_coaches.csv,6,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+male,male_coaches.csv,7,nationality_name,coded_text,普通属性,,Country name text.
+male,male_coaches.csv,8,face_url,url_or_path,普通属性,,Portrait image URL.
+male,male_players (legacy).csv,1,player_id,integer,PK,,Player business identifier.
+male,male_players (legacy).csv,2,player_url,url_or_path,普通属性,,Relative URL for the player profile page.
+male,male_players (legacy).csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+male,male_players (legacy).csv,4,fifa_update,integer,PK,,In-version update sequence number.
+male,male_players (legacy).csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+male,male_players (legacy).csv,6,short_name,text,普通属性,,Short display name.
+male,male_players (legacy).csv,7,long_name,text,普通属性,,Full display name.
+male,male_players (legacy).csv,8,player_positions,text,普通属性,,Primary and secondary player positions.
+male,male_players (legacy).csv,9,overall,integer,普通属性,,Overall rating.
+male,male_players (legacy).csv,10,potential,integer,普通属性,,Potential rating.
+male,male_players (legacy).csv,11,value_eur,integer,普通属性,,Estimated market value in EUR.
+male,male_players (legacy).csv,12,wage_eur,integer,普通属性,,Estimated wage in EUR.
+male,male_players (legacy).csv,13,age,integer,普通属性,,Age in years at the snapshot date.
+male,male_players (legacy).csv,14,dob,date,普通属性,,Date of birth.
+male,male_players (legacy).csv,15,height_cm,integer,普通属性,,Height in centimeters.
+male,male_players (legacy).csv,16,weight_kg,integer,普通属性,,Weight in kilograms.
+male,male_players (legacy).csv,17,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+male,male_players (legacy).csv,18,league_name,coded_text,普通属性,,League name text.
+male,male_players (legacy).csv,19,league_level,integer,普通属性,,League tier level.
+male,male_players (legacy).csv,20,club_team_id,integer,实体引用,male_teams.csv.team_id,Referenced club team business ID.
+male,male_players (legacy).csv,21,club_name,coded_text,普通属性,,Club name text.
+male,male_players (legacy).csv,22,club_position,text,普通属性,,Player role inside the club lineup.
+male,male_players (legacy).csv,23,club_jersey_number,integer,普通属性,,Club jersey number.
+male,male_players (legacy).csv,24,club_loaned_from,text,普通属性,,Source club when the player is on loan.
+male,male_players (legacy).csv,25,club_joined_date,date,普通属性,,Date when the player joined the club.
+male,male_players (legacy).csv,26,club_contract_valid_until_year,integer,普通属性,,Club contract end year.
+male,male_players (legacy).csv,27,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+male,male_players (legacy).csv,28,nationality_name,text,普通属性,,Country name text.
+male,male_players (legacy).csv,29,nation_team_id,integer,实体引用,male_teams.csv.team_id,Referenced national team business ID.
+male,male_players (legacy).csv,30,nation_position,text,普通属性,,Player role inside the national team lineup.
+male,male_players (legacy).csv,31,nation_jersey_number,integer,普通属性,,National team jersey number.
+male,male_players (legacy).csv,32,preferred_foot,coded_text,普通属性,,Preferred foot.
+male,male_players (legacy).csv,33,weak_foot,integer,普通属性,,Weak-foot rating.
+male,male_players (legacy).csv,34,skill_moves,integer,普通属性,,Skill-move rating.
+male,male_players (legacy).csv,35,international_reputation,integer,普通属性,,International reputation rating.
+male,male_players (legacy).csv,36,work_rate,coded_text,普通属性,,Attacking and defensive work rate.
+male,male_players (legacy).csv,37,body_type,coded_text,普通属性,,Body type descriptor.
+male,male_players (legacy).csv,38,real_face,boolean_text,普通属性,,Whether the player has a real face scan.
+male,male_players (legacy).csv,39,release_clause_eur,unknown,普通属性,,Release clause amount in EUR.
+male,male_players (legacy).csv,40,player_tags,text,普通属性,,Tagged special roles or archetypes.
+male,male_players (legacy).csv,41,player_traits,text,普通属性,,Detailed player traits.
+male,male_players (legacy).csv,42,pace,integer,普通属性,,Aggregate pace rating.
+male,male_players (legacy).csv,43,shooting,integer,普通属性,,Aggregate shooting rating.
+male,male_players (legacy).csv,44,passing,integer,普通属性,,Aggregate passing rating.
+male,male_players (legacy).csv,45,dribbling,integer,普通属性,,Aggregate dribbling rating.
+male,male_players (legacy).csv,46,defending,integer,普通属性,,Aggregate defending rating.
+male,male_players (legacy).csv,47,physic,integer,普通属性,,Aggregate physical rating.
+male,male_players (legacy).csv,48,attacking_crossing,integer,普通属性,,Detailed attacking metric: crossing.
+male,male_players (legacy).csv,49,attacking_finishing,integer,普通属性,,Detailed attacking metric: finishing.
+male,male_players (legacy).csv,50,attacking_heading_accuracy,integer,普通属性,,Detailed attacking metric: heading accuracy.
+male,male_players (legacy).csv,51,attacking_short_passing,integer,普通属性,,Detailed attacking metric: short passing.
+male,male_players (legacy).csv,52,attacking_volleys,integer,普通属性,,Detailed attacking metric: volleys.
+male,male_players (legacy).csv,53,skill_dribbling,integer,普通属性,,Detailed skill metric: dribbling.
+male,male_players (legacy).csv,54,skill_curve,integer,普通属性,,Detailed skill metric: curve.
+male,male_players (legacy).csv,55,skill_fk_accuracy,integer,普通属性,,Detailed skill metric: fk accuracy.
+male,male_players (legacy).csv,56,skill_long_passing,integer,普通属性,,Detailed skill metric: long passing.
+male,male_players (legacy).csv,57,skill_ball_control,integer,普通属性,,Detailed skill metric: ball control.
+male,male_players (legacy).csv,58,movement_acceleration,integer,普通属性,,Detailed movement metric: acceleration.
+male,male_players (legacy).csv,59,movement_sprint_speed,integer,普通属性,,Detailed movement metric: sprint speed.
+male,male_players (legacy).csv,60,movement_agility,integer,普通属性,,Detailed movement metric: agility.
+male,male_players (legacy).csv,61,movement_reactions,integer,普通属性,,Detailed movement metric: reactions.
+male,male_players (legacy).csv,62,movement_balance,integer,普通属性,,Detailed movement metric: balance.
+male,male_players (legacy).csv,63,power_shot_power,integer,普通属性,,Detailed power metric: shot power.
+male,male_players (legacy).csv,64,power_jumping,integer,普通属性,,Detailed power metric: jumping.
+male,male_players (legacy).csv,65,power_stamina,integer,普通属性,,Detailed power metric: stamina.
+male,male_players (legacy).csv,66,power_strength,integer,普通属性,,Detailed power metric: strength.
+male,male_players (legacy).csv,67,power_long_shots,integer,普通属性,,Detailed power metric: long shots.
+male,male_players (legacy).csv,68,mentality_aggression,integer,普通属性,,Detailed mentality metric: aggression.
+male,male_players (legacy).csv,69,mentality_interceptions,integer,普通属性,,Detailed mentality metric: interceptions.
+male,male_players (legacy).csv,70,mentality_positioning,integer,普通属性,,Detailed mentality metric: positioning.
+male,male_players (legacy).csv,71,mentality_vision,integer,普通属性,,Detailed mentality metric: vision.
+male,male_players (legacy).csv,72,mentality_penalties,integer,普通属性,,Detailed mentality metric: penalties.
+male,male_players (legacy).csv,73,mentality_composure,unknown,普通属性,,Detailed mentality metric: composure.
+male,male_players (legacy).csv,74,defending_marking_awareness,integer,普通属性,,Detailed defending metric: marking awareness.
+male,male_players (legacy).csv,75,defending_standing_tackle,integer,普通属性,,Detailed defending metric: standing tackle.
+male,male_players (legacy).csv,76,defending_sliding_tackle,integer,普通属性,,Detailed defending metric: sliding tackle.
+male,male_players (legacy).csv,77,goalkeeping_diving,integer,普通属性,,Detailed goalkeeping metric: diving.
+male,male_players (legacy).csv,78,goalkeeping_handling,integer,普通属性,,Detailed goalkeeping metric: handling.
+male,male_players (legacy).csv,79,goalkeeping_kicking,integer,普通属性,,Detailed goalkeeping metric: kicking.
+male,male_players (legacy).csv,80,goalkeeping_positioning,integer,普通属性,,Detailed goalkeeping metric: positioning.
+male,male_players (legacy).csv,81,goalkeeping_reflexes,integer,普通属性,,Detailed goalkeeping metric: reflexes.
+male,male_players (legacy).csv,82,goalkeeping_speed,integer,普通属性,,Detailed goalkeeping metric: speed.
+male,male_players (legacy).csv,83,ls,position_rating_projection,普通属性,,Projected rating for the LS position.
+male,male_players (legacy).csv,84,st,position_rating_projection,普通属性,,Projected rating for the ST position.
+male,male_players (legacy).csv,85,rs,position_rating_projection,普通属性,,Projected rating for the RS position.
+male,male_players (legacy).csv,86,lw,position_rating_projection,普通属性,,Projected rating for the LW position.
+male,male_players (legacy).csv,87,lf,position_rating_projection,普通属性,,Projected rating for the LF position.
+male,male_players (legacy).csv,88,cf,position_rating_projection,普通属性,,Projected rating for the CF position.
+male,male_players (legacy).csv,89,rf,position_rating_projection,普通属性,,Projected rating for the RF position.
+male,male_players (legacy).csv,90,rw,position_rating_projection,普通属性,,Projected rating for the RW position.
+male,male_players (legacy).csv,91,lam,text,普通属性,,Projected rating for the LAM position.
+male,male_players (legacy).csv,92,cam,text,普通属性,,Projected rating for the CAM position.
+male,male_players (legacy).csv,93,ram,text,普通属性,,Projected rating for the RAM position.
+male,male_players (legacy).csv,94,lm,position_rating_projection,普通属性,,Projected rating for the LM position.
+male,male_players (legacy).csv,95,lcm,position_rating_projection,普通属性,,Projected rating for the LCM position.
+male,male_players (legacy).csv,96,cm,position_rating_projection,普通属性,,Projected rating for the CM position.
+male,male_players (legacy).csv,97,rcm,position_rating_projection,普通属性,,Projected rating for the RCM position.
+male,male_players (legacy).csv,98,rm,position_rating_projection,普通属性,,Projected rating for the RM position.
+male,male_players (legacy).csv,99,lwb,position_rating_projection,普通属性,,Projected rating for the LWB position.
+male,male_players (legacy).csv,100,ldm,position_rating_projection,普通属性,,Projected rating for the LDM position.
+male,male_players (legacy).csv,101,cdm,position_rating_projection,普通属性,,Projected rating for the CDM position.
+male,male_players (legacy).csv,102,rdm,position_rating_projection,普通属性,,Projected rating for the RDM position.
+male,male_players (legacy).csv,103,rwb,position_rating_projection,普通属性,,Projected rating for the RWB position.
+male,male_players (legacy).csv,104,lb,position_rating_projection,普通属性,,Projected rating for the LB position.
+male,male_players (legacy).csv,105,lcb,position_rating_projection,普通属性,,Projected rating for the LCB position.
+male,male_players (legacy).csv,106,cb,position_rating_projection,普通属性,,Projected rating for the CB position.
+male,male_players (legacy).csv,107,rcb,position_rating_projection,普通属性,,Projected rating for the RCB position.
+male,male_players (legacy).csv,108,rb,position_rating_projection,普通属性,,Projected rating for the RB position.
+male,male_players (legacy).csv,109,gk,position_rating_projection,普通属性,,Projected rating for the GK position.
+male,male_players (legacy).csv,110,player_face_url,url_or_path,普通属性,,URL or relative path attribute.
+male,male_players.csv,1,player_id,integer,PK,,Player business identifier.
+male,male_players.csv,2,player_url,url_or_path,普通属性,,Relative URL for the player profile page.
+male,male_players.csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+male,male_players.csv,4,fifa_update,integer,PK,,In-version update sequence number.
+male,male_players.csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+male,male_players.csv,6,short_name,text,普通属性,,Short display name.
+male,male_players.csv,7,long_name,text,普通属性,,Full display name.
+male,male_players.csv,8,player_positions,text,普通属性,,Primary and secondary player positions.
+male,male_players.csv,9,overall,integer,普通属性,,Overall rating.
+male,male_players.csv,10,potential,integer,普通属性,,Potential rating.
+male,male_players.csv,11,value_eur,integer,普通属性,,Estimated market value in EUR.
+male,male_players.csv,12,wage_eur,integer,普通属性,,Estimated wage in EUR.
+male,male_players.csv,13,age,integer,普通属性,,Age in years at the snapshot date.
+male,male_players.csv,14,dob,date,普通属性,,Date of birth.
+male,male_players.csv,15,height_cm,integer,普通属性,,Height in centimeters.
+male,male_players.csv,16,weight_kg,integer,普通属性,,Weight in kilograms.
+male,male_players.csv,17,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+male,male_players.csv,18,league_name,coded_text,普通属性,,League name text.
+male,male_players.csv,19,league_level,integer,普通属性,,League tier level.
+male,male_players.csv,20,club_team_id,integer,实体引用,male_teams.csv.team_id,Referenced club team business ID.
+male,male_players.csv,21,club_name,coded_text,普通属性,,Club name text.
+male,male_players.csv,22,club_position,text,普通属性,,Player role inside the club lineup.
+male,male_players.csv,23,club_jersey_number,integer,普通属性,,Club jersey number.
+male,male_players.csv,24,club_loaned_from,text,普通属性,,Source club when the player is on loan.
+male,male_players.csv,25,club_joined_date,date,普通属性,,Date when the player joined the club.
+male,male_players.csv,26,club_contract_valid_until_year,integer,普通属性,,Club contract end year.
+male,male_players.csv,27,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+male,male_players.csv,28,nationality_name,text,普通属性,,Country name text.
+male,male_players.csv,29,nation_team_id,integer,实体引用,male_teams.csv.team_id,Referenced national team business ID.
+male,male_players.csv,30,nation_position,text,普通属性,,Player role inside the national team lineup.
+male,male_players.csv,31,nation_jersey_number,integer,普通属性,,National team jersey number.
+male,male_players.csv,32,preferred_foot,coded_text,普通属性,,Preferred foot.
+male,male_players.csv,33,weak_foot,integer,普通属性,,Weak-foot rating.
+male,male_players.csv,34,skill_moves,integer,普通属性,,Skill-move rating.
+male,male_players.csv,35,international_reputation,integer,普通属性,,International reputation rating.
+male,male_players.csv,36,work_rate,coded_text,普通属性,,Attacking and defensive work rate.
+male,male_players.csv,37,body_type,coded_text,普通属性,,Body type descriptor.
+male,male_players.csv,38,real_face,boolean_text,普通属性,,Whether the player has a real face scan.
+male,male_players.csv,39,release_clause_eur,integer,普通属性,,Release clause amount in EUR.
+male,male_players.csv,40,player_tags,text,普通属性,,Tagged special roles or archetypes.
+male,male_players.csv,41,player_traits,text,普通属性,,Detailed player traits.
+male,male_players.csv,42,pace,integer,普通属性,,Aggregate pace rating.
+male,male_players.csv,43,shooting,integer,普通属性,,Aggregate shooting rating.
+male,male_players.csv,44,passing,integer,普通属性,,Aggregate passing rating.
+male,male_players.csv,45,dribbling,integer,普通属性,,Aggregate dribbling rating.
+male,male_players.csv,46,defending,integer,普通属性,,Aggregate defending rating.
+male,male_players.csv,47,physic,integer,普通属性,,Aggregate physical rating.
+male,male_players.csv,48,attacking_crossing,integer,普通属性,,Detailed attacking metric: crossing.
+male,male_players.csv,49,attacking_finishing,integer,普通属性,,Detailed attacking metric: finishing.
+male,male_players.csv,50,attacking_heading_accuracy,integer,普通属性,,Detailed attacking metric: heading accuracy.
+male,male_players.csv,51,attacking_short_passing,integer,普通属性,,Detailed attacking metric: short passing.
+male,male_players.csv,52,attacking_volleys,integer,普通属性,,Detailed attacking metric: volleys.
+male,male_players.csv,53,skill_dribbling,integer,普通属性,,Detailed skill metric: dribbling.
+male,male_players.csv,54,skill_curve,integer,普通属性,,Detailed skill metric: curve.
+male,male_players.csv,55,skill_fk_accuracy,integer,普通属性,,Detailed skill metric: fk accuracy.
+male,male_players.csv,56,skill_long_passing,integer,普通属性,,Detailed skill metric: long passing.
+male,male_players.csv,57,skill_ball_control,integer,普通属性,,Detailed skill metric: ball control.
+male,male_players.csv,58,movement_acceleration,integer,普通属性,,Detailed movement metric: acceleration.
+male,male_players.csv,59,movement_sprint_speed,integer,普通属性,,Detailed movement metric: sprint speed.
+male,male_players.csv,60,movement_agility,integer,普通属性,,Detailed movement metric: agility.
+male,male_players.csv,61,movement_reactions,integer,普通属性,,Detailed movement metric: reactions.
+male,male_players.csv,62,movement_balance,integer,普通属性,,Detailed movement metric: balance.
+male,male_players.csv,63,power_shot_power,integer,普通属性,,Detailed power metric: shot power.
+male,male_players.csv,64,power_jumping,integer,普通属性,,Detailed power metric: jumping.
+male,male_players.csv,65,power_stamina,integer,普通属性,,Detailed power metric: stamina.
+male,male_players.csv,66,power_strength,integer,普通属性,,Detailed power metric: strength.
+male,male_players.csv,67,power_long_shots,integer,普通属性,,Detailed power metric: long shots.
+male,male_players.csv,68,mentality_aggression,integer,普通属性,,Detailed mentality metric: aggression.
+male,male_players.csv,69,mentality_interceptions,integer,普通属性,,Detailed mentality metric: interceptions.
+male,male_players.csv,70,mentality_positioning,integer,普通属性,,Detailed mentality metric: positioning.
+male,male_players.csv,71,mentality_vision,integer,普通属性,,Detailed mentality metric: vision.
+male,male_players.csv,72,mentality_penalties,integer,普通属性,,Detailed mentality metric: penalties.
+male,male_players.csv,73,mentality_composure,integer,普通属性,,Detailed mentality metric: composure.
+male,male_players.csv,74,defending_marking_awareness,integer,普通属性,,Detailed defending metric: marking awareness.
+male,male_players.csv,75,defending_standing_tackle,integer,普通属性,,Detailed defending metric: standing tackle.
+male,male_players.csv,76,defending_sliding_tackle,integer,普通属性,,Detailed defending metric: sliding tackle.
+male,male_players.csv,77,goalkeeping_diving,integer,普通属性,,Detailed goalkeeping metric: diving.
+male,male_players.csv,78,goalkeeping_handling,integer,普通属性,,Detailed goalkeeping metric: handling.
+male,male_players.csv,79,goalkeeping_kicking,integer,普通属性,,Detailed goalkeeping metric: kicking.
+male,male_players.csv,80,goalkeeping_positioning,integer,普通属性,,Detailed goalkeeping metric: positioning.
+male,male_players.csv,81,goalkeeping_reflexes,integer,普通属性,,Detailed goalkeeping metric: reflexes.
+male,male_players.csv,82,goalkeeping_speed,integer,普通属性,,Detailed goalkeeping metric: speed.
+male,male_players.csv,83,ls,position_rating_projection,普通属性,,Projected rating for the LS position.
+male,male_players.csv,84,st,position_rating_projection,普通属性,,Projected rating for the ST position.
+male,male_players.csv,85,rs,position_rating_projection,普通属性,,Projected rating for the RS position.
+male,male_players.csv,86,lw,integer,普通属性,,Projected rating for the LW position.
+male,male_players.csv,87,lf,integer,普通属性,,Projected rating for the LF position.
+male,male_players.csv,88,cf,integer,普通属性,,Projected rating for the CF position.
+male,male_players.csv,89,rf,integer,普通属性,,Projected rating for the RF position.
+male,male_players.csv,90,rw,integer,普通属性,,Projected rating for the RW position.
+male,male_players.csv,91,lam,text,普通属性,,Projected rating for the LAM position.
+male,male_players.csv,92,cam,text,普通属性,,Projected rating for the CAM position.
+male,male_players.csv,93,ram,text,普通属性,,Projected rating for the RAM position.
+male,male_players.csv,94,lm,position_rating_projection,普通属性,,Projected rating for the LM position.
+male,male_players.csv,95,lcm,position_rating_projection,普通属性,,Projected rating for the LCM position.
+male,male_players.csv,96,cm,position_rating_projection,普通属性,,Projected rating for the CM position.
+male,male_players.csv,97,rcm,position_rating_projection,普通属性,,Projected rating for the RCM position.
+male,male_players.csv,98,rm,position_rating_projection,普通属性,,Projected rating for the RM position.
+male,male_players.csv,99,lwb,position_rating_projection,普通属性,,Projected rating for the LWB position.
+male,male_players.csv,100,ldm,position_rating_projection,普通属性,,Projected rating for the LDM position.
+male,male_players.csv,101,cdm,position_rating_projection,普通属性,,Projected rating for the CDM position.
+male,male_players.csv,102,rdm,position_rating_projection,普通属性,,Projected rating for the RDM position.
+male,male_players.csv,103,rwb,position_rating_projection,普通属性,,Projected rating for the RWB position.
+male,male_players.csv,104,lb,position_rating_projection,普通属性,,Projected rating for the LB position.
+male,male_players.csv,105,lcb,position_rating_projection,普通属性,,Projected rating for the LCB position.
+male,male_players.csv,106,cb,position_rating_projection,普通属性,,Projected rating for the CB position.
+male,male_players.csv,107,rcb,position_rating_projection,普通属性,,Projected rating for the RCB position.
+male,male_players.csv,108,rb,position_rating_projection,普通属性,,Projected rating for the RB position.
+male,male_players.csv,109,gk,position_rating_projection,普通属性,,Projected rating for the GK position.
+male,male_players.csv,110,player_face_url,url_or_path,普通属性,,URL or relative path attribute.
+male,male_teams.csv,1,team_id,integer,PK,,Team business identifier.
+male,male_teams.csv,2,team_url,url_or_path,普通属性,,Relative URL for the team profile page.
+male,male_teams.csv,3,fifa_version,integer,PK,,Game version number that identifies the yearly edition.
+male,male_teams.csv,4,fifa_update,integer,PK,,In-version update sequence number.
+male,male_teams.csv,5,fifa_update_date,date,普通属性,,Release date of the specific FIFA update.
+male,male_teams.csv,6,team_name,text,普通属性,,Displayed team name.
+male,male_teams.csv,7,league_id,integer,外部维度引用,external dimension not included in maindata,League identifier; local league table is not present in maindata.
+male,male_teams.csv,8,league_name,coded_text,普通属性,,League name text.
+male,male_teams.csv,9,league_level,integer,普通属性,,League tier level.
+male,male_teams.csv,10,nationality_id,integer,外部维度引用,external dimension not included in maindata,Country identifier; local country table is not present in maindata.
+male,male_teams.csv,11,nationality_name,coded_text,普通属性,,Country name text.
+male,male_teams.csv,12,overall,integer,普通属性,,Overall rating.
+male,male_teams.csv,13,attack,integer,普通属性,,General attribute: attack.
+male,male_teams.csv,14,midfield,integer,普通属性,,General attribute: midfield.
+male,male_teams.csv,15,defence,integer,普通属性,,General attribute: defence.
+male,male_teams.csv,16,coach_id,integer,严格FK,male_coaches.csv.coach_id,Coach business identifier.
+male,male_teams.csv,17,home_stadium,text,普通属性,,Home stadium name.
+male,male_teams.csv,18,rival_team,integer,弱自引用,male_teams.csv.team_id,Referenced rival team business ID.
+male,male_teams.csv,19,international_prestige,integer,普通属性,,International prestige score.
+male,male_teams.csv,20,domestic_prestige,integer,普通属性,,Domestic prestige score.
+male,male_teams.csv,21,transfer_budget_eur,unknown,普通属性,,Transfer budget in EUR.
+male,male_teams.csv,22,club_worth_eur,integer,普通属性,,Estimated club worth in EUR.
+male,male_teams.csv,23,starting_xi_average_age,decimal,普通属性,,Average age of the starting eleven.
+male,male_teams.csv,24,whole_team_average_age,decimal,普通属性,,Average age of the full squad.
+male,male_teams.csv,25,captain,integer,实体引用,male_players.csv.player_id,Captain player business ID.
+male,male_teams.csv,26,short_free_kick,integer,实体引用,male_players.csv.player_id,Assigned short free-kick taker ID.
+male,male_teams.csv,27,long_free_kick,integer,实体引用,male_players.csv.player_id,Assigned long free-kick taker ID.
+male,male_teams.csv,28,left_short_free_kick,integer,实体引用,male_players.csv.player_id,Assigned left short free-kick taker ID.
+male,male_teams.csv,29,right_short_free_kick,integer,实体引用,male_players.csv.player_id,Assigned right short free-kick taker ID.
+male,male_teams.csv,30,penalties,integer,实体引用,male_players.csv.player_id,Assigned penalty taker ID.
+male,male_teams.csv,31,left_corner,integer,实体引用,male_players.csv.player_id,Assigned left corner taker ID.
+male,male_teams.csv,32,right_corner,integer,实体引用,male_players.csv.player_id,Assigned right corner taker ID.
+male,male_teams.csv,33,def_style,text,普通属性,,Team defensive tactic attribute: style.
+male,male_teams.csv,34,def_team_width,integer,普通属性,,Team defensive tactic attribute: team width.
+male,male_teams.csv,35,def_team_depth,integer,普通属性,,Team defensive tactic attribute: team depth.
+male,male_teams.csv,36,def_defence_pressure,unknown,普通属性,,Team defensive tactic attribute: defence pressure.
+male,male_teams.csv,37,def_defence_aggression,unknown,普通属性,,Team defensive tactic attribute: defence aggression.
+male,male_teams.csv,38,def_defence_width,unknown,普通属性,,Team defensive tactic attribute: defence width.
+male,male_teams.csv,39,def_defence_defender_line,unknown,普通属性,,Team defensive tactic attribute: defence defender line.
+male,male_teams.csv,40,off_style,unknown,普通属性,,Team offensive tactic attribute: style.
+male,male_teams.csv,41,off_build_up_play,coded_text,普通属性,,Team offensive tactic attribute: build up play.
+male,male_teams.csv,42,off_chance_creation,coded_text,普通属性,,Team offensive tactic attribute: chance creation.
+male,male_teams.csv,43,off_team_width,integer,普通属性,,Team offensive tactic attribute: team width.
+male,male_teams.csv,44,off_players_in_box,integer,普通属性,,Team offensive tactic attribute: players in box.
+male,male_teams.csv,45,off_corners,integer,普通属性,,Team offensive tactic attribute: corners.
+male,male_teams.csv,46,off_free_kicks,integer,普通属性,,Team offensive tactic attribute: free kicks.
+male,male_teams.csv,47,build_up_play_speed,unknown,普通属性,,Build-up play setting: speed.
+male,male_teams.csv,48,build_up_play_dribbling,unknown,普通属性,,Build-up play setting: dribbling.
+male,male_teams.csv,49,build_up_play_passing,unknown,普通属性,,Build-up play setting: passing.
+male,male_teams.csv,50,build_up_play_positioning,unknown,普通属性,,Build-up play setting: positioning.
+male,male_teams.csv,51,chance_creation_passing,unknown,普通属性,,Chance-creation setting: passing.
+male,male_teams.csv,52,chance_creation_crossing,unknown,普通属性,,Chance-creation setting: crossing.
+male,male_teams.csv,53,chance_creation_shooting,unknown,普通属性,,Chance-creation setting: shooting.
+male,male_teams.csv,54,chance_creation_positioning,unknown,普通属性,,Chance-creation setting: positioning.

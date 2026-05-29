@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.Rhistory
+.ipynb_checkpoints/
+/Transfer Market Data*.csv
+/Origin Club List.csv
+/Destination Club List.csv
+/male_players.csv
+/male_players (legacy).csv
+/male_teams.csv
+/male_coaches.csv
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+env/
+*.csv
+!data_structure_table.csv
+!sql_ready/*.csv
+.Rhistory
